@@ -1,0 +1,243 @@
+/* navigation bar */
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+     display: flex;
+     align-items: center;
+     margin-top: 0px;
+     position: sticky;
+     top: 0px;
+}
+.logo{
+    margin: 8px 28px;
+}
+.logo img{
+    width: 40px;
+    height: 58px;
+    margin: 0px 0px;
+    /* margin-right: 50px; */
+}
+/* background :url('https://media.istockphoto.com/photos/groceries-contactless-home-delivery-picture-id1256974346'); */
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    /* background :url('https://media.istockphoto.com/photos/groceries-contactless-home-delivery-picture-id1256974346'); */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.3;
+    z-index: -2;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 7px 21px;
+    transition: all 0.3s ease-in;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: default;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    transform: skewX(-3deg);
+    
+}
+#navbar ul {
+    display: flex;
+}
+/* section part */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 286px;
+    
+}
+.h-primary{
+    margin-top:30px;
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(0, 0, 0);
+}
+#home p{
+    margin: 5px 260px;
+    text-align: center;
+    font-family: cursive;
+    color: rgb(0, 0, 0);
+}
+#home button{
+    margin-top: 18px;
+    padding: 8px;
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(255, 255, 255, 0.541);
+    font-weight: 500;
+    cursor: pointer;
+}
+#home button:hover{
+    color: black;
+    background-color: rgba(246, 246, 237, 0.721);
+    font-weight: bold;
+    transform: skewX(-3deg);
+}
+#home::before{
+    content:"";
+    /* background-color: black; */
+    background :url('https://cdn.pixabay.com/photo/2016/11/21/14/57/wheat-1845835_1280.jpg')no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 360px;
+    top: 0px;
+    left: 0px;
+    opacity: 2;
+    z-index:-2;
+}
+
+/* our services */
+#head{
+   padding: 20px;
+   text-align: center;
+   font-family: 'Kdam Thmor Pro', sans-serif;
+   font-size: 2.3rem;
+}
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#services-container{
+    background-color: rgb(241, 217, 138);
+}
+.services .box{
+    border: 2px solid rgb(31, 29, 29);
+    background-color: rgba(239, 239, 162, 0.804);
+    /* width: 380px; */
+    border-radius: 30px;
+    text-align: center;
+    margin: 20px;
+    /* height: 280px; */
+    
+}
+.hero{
+    font-family: 'Montserrat', sans-serif;
+    padding:0px 30px;
+    font-size: 13px;
+}
+.services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+.heading{
+    text-align: center;
+    padding:10px;
+    font-size: 30px;
+}
+
+/* our clients */
+#client-section{
+    position: relative;
+    margin-top: 4px ;
+    z-index: -90;
+    /* padding: 38px 10px; */
+}
+#anjul{
+    text-align: center;
+    padding-top: 20px ;
+    font-size: 2.3rem;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-item img{
+    display: block;
+  height: 100px;
+  width: 176px;
+  padding: 20px 1px;
+  padding-bottom: 30px;
+  
+}
+#client-section::before{
+    content: "";
+background: url('https://cdn.pixabay.com/photo/2017/01/04/19/41/candes-1952997_1280.jpg') no-repeat center center/cover;
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+z-index: -6;
+opacity: 0.45;
+}
+
+/* contact us */
+#dibya{
+    text-align: center;
+    padding-top: 10px ;
+    font-size: 2.3rem;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+#contact{
+    position: relative;
+    
+}
+#contact::before{
+    content: "";
+    background: url('https://cdn.pixabay.com/photo/2019/05/10/13/28/contact-us-4193523_1280.jpg') no-repeat center center/cover;
+    position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+z-index: -4;
+opacity: 1;
+}
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    border: 2px solid black;
+}
+.contact-box label{
+    font-size: 1.1rem;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 34px;
+}
+.contact-box form{
+    width: 40%;
+}
+/* last part */
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
